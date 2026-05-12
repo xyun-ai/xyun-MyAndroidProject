@@ -173,13 +173,6 @@ app/src/main/res/
 ✅ 项目已成功构建
 ✅ APK已生成: `app/build/outputs/apk/debug/app-debug.apk`
 
-## 后续开发建议
-
-1. 添加消费记录详情页面
-2. 实现数据持久化（SQLite或Room）
-3. 添加分类统计功能
-4. 实现数据导出功能
-5. 添加图表展示消费趋势
 
 ## 许可证
 
