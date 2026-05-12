@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 使用AppCompat主题而不是原生Android主题 -->
+    <style name="Theme.Class_two" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 自定义主题属性可以在这里添加 -->
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#388E3C</item>
+        <item name="colorAccent">#FF9800</item>
+    </style>
+</resources>

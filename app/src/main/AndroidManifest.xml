@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 前台服务权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <!-- 通知权限 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Class_two"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Class_two">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".RecordListActivity"
+            android:exported="false"
+            android:label="记账记录列表"
+            android:theme="@style/Theme.Class_two" />
+
+        <activity
+            android:name=".NotificationTestActivity"
+            android:exported="false"
+            android:label="通知功能测试"
+            android:theme="@style/Theme.Class_two" />
+
+        <!-- 新增：功能测试页面 -->
+        <activity
+            android:name=".FeaturesTestActivity"
+            android:label="功能测试"
+            android:exported="false" />
+
+        <!-- 已修复：前台服务正确配置 -->
+        <service
+            android:name=".service.ExpenseMonitorService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" />
+
+        <provider
+            android:name=".provider.ExpenseProvider"
+            android:authorities="com.example.class_two.expenseprovider"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

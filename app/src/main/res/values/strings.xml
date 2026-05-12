@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">class_two</string>
+
+    <!-- 消费分类 -->
+    <string-array name="expense_categories">
+        <item>餐饮</item>
+        <item>交通</item>
+        <item>购物</item>
+        <item>娱乐</item>
+        <item>住房</item>
+        <item>医疗</item>
+        <item>教育</item>
+        <item>其他</item>
+    </string-array>
+
+    <!-- 通知相关 -->
+    <string name="notification_channel_name">记账提醒</string>
+    <string name="notification_channel_description">记账应用的通知频道</string>
+    <string name="notification_title_expense_reminder">记账提醒</string>
+    <string name="notification_content_expense_reminder">今天还没有记录支出，点击立即记账</string>
+    <string name="notification_title_daily_summary">今日消费总结</string>
+    <string name="notification_title_budget_alert">每周预算提醒</string>
+
+    <!-- 按钮文本 -->
+    <string name="btn_add_expense">添加消费</string>
+    <string name="btn_view_records">查看记录</string>
+    <string name="btn_send_notification">发送记账提醒通知</string>
+    <string name="btn_add_record">添加记录</string>
+    <string name="btn_clear_all">清空所有</string>
+
+    <!-- 对话框文本 -->
+    <string name="dialog_title_add_transaction">添加消费记录</string>
+    <string name="dialog_hint_amount">金额</string>
+    <string name="dialog_hint_note">备注（可选）</string>
+    <string name="dialog_btn_save">保存</string>
+    <string name="dialog_btn_cancel">取消</string>
+    <string name="dialog_error_invalid_amount">请输入有效的金额</string>
+    <string name="dialog_error_amount_zero">金额必须大于0</string>
+
+    <!-- 提示信息 -->
+    <string name="toast_record_saved">消费记录已保存</string>
+    <string name="toast_notification_sent">记账提醒通知已发送</string>
+    <string name="toast_test_notification_sent">测试通知已发送</string>
+    <string name="toast_permission_granted">通知权限已授予</string>
+    <string name="toast_permission_denied">通知权限被拒绝</string>
+    <string name="toast_notification_unavailable">通知功能将不可用</string>
+
+    <!-- 列表相关 -->
+    <string name="text_total_expense">总消费金额</string>
+    <string name="text_monthly_expense">本月消费</string>
+    <string name="text_expense_records">消费记录</string>
+    <string name="text_record_count">共 %d 条</string>
+    <string name="text_empty_list_hint">暂无消费记录\n点击上方按钮添加第一条记录</string>
+
+    <!-- 权限对话框 -->
+    <string name="permission_dialog_title">需要通知权限</string>
+    <string name="permission_dialog_message">记账应用需要通知权限来发送记账提醒、每日总结和预算提醒。\n\n教学重点：\n• Android 13+ 需要运行时权限\n• 权限请求流程\n• 用户体验优化</string>
+    <string name="permission_dialog_allow">允许</string>
+    <string name="permission_dialog_deny">拒绝</string>
+
+    <!-- 总结对话框 -->
+    <string name="summary_dialog_title">今日消费总结</string>
+    <string name="summary_dialog_message" formatted="false">消费详情：\n\n• 总金额：¥%.2f\n• 交易笔数：%d笔\n• 平均每笔：¥%.2f</string>
+
+    <!-- 预算对话框 -->
+    <string name="budget_dialog_title">预算状态</string>
+    <string name="budget_dialog_message">预算功能正在开发中...\n\n教学重点：\n1. PendingIntent传递数据\n2. 通知点击跳转\n3. 多个操作按钮</string>
+
+    <!-- 添加Service相关字符串 -->
+    <string name="service_started">后台监控服务已启动</string>
+    <string name="service_stopped">后台监控服务已停止</string>
+    <string name="service_running">后台监控服务运行中</string>
+    <string name="service_status">服务状态：%1$s</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- 标题 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第五周功能测试界面"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/purple_700" />
+
+        <!-- 广播测试区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="广播功能测试"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/broadcast_status_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="广播状态: 等待测试"
+                android:layout_marginBottom="12dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/send_broadcast_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发送测试广播"
+                android:backgroundTint="@color/purple_500" />
+
+        </LinearLayout>
+
+        <!-- 服务测试区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="后台服务测试"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/service_status_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="服务状态: 未启动"
+                android:layout_marginBottom="12dp"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:id="@+id/start_service_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="启动服务"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/green_500" />
+
+                <Button
+                    android:id="@+id/stop_service_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="停止服务"
+                    android:backgroundTint="@color/red_500" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="说明: 服务启动后会显示通知，每10秒执行一次监控任务"
+                android:textSize="12sp"
+                android:textColor="@color/gray_600" />
+
+        </LinearLayout>
+
+        <!-- ContentProvider测试区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ContentProvider测试"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cp_status_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ContentProvider状态: 等待测试"
+                android:layout_marginBottom="12dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/test_cp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试ContentProvider"
+                android:backgroundTint="@color/blue_500" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="说明: 测试数据访问接口层的CRUD操作"
+                android:textSize="12sp"
+                android:textColor="@color/gray_600"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- 返回按钮 -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="返回主界面"
+            android:layout_marginTop="24dp"
+            android:onClick="onBackButtonClick"
+            android:backgroundTint="@color/gray_500" />
+
+    </LinearLayout>
+</ScrollView>

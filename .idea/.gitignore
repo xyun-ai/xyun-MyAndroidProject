@@ -1,0 +1,25 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Gradle
+.gradle/
+build/
+
+# Local configuration
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+
+# Build files
+/app/build/
+
+# Generated files
+captures/
+.externalNativeBuild/
+
+# OS files
+.DS_Store
+Thumbs.db

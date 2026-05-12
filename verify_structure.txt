@@ -1,0 +1,30 @@
+消费记录App项目结构验证：
+
+1. 布局文件：
+   ✓ app/src/main/res/layout/activity_main.xml - 已创建
+
+2. Drawable资源：
+   ✓ app/src/main/res/drawable/btn_rounded_corner.xml - 已创建
+   ✓ app/src/main/res/drawable/ic_add.xml - 已创建
+
+3. Java代码：
+   ✓ app/src/main/java/com/example/class_two/MainActivity.java - 已创建
+
+4. 配置文件：
+   ✓ app/build.gradle.kts - 已更新为传统Android项目
+   ✓ gradle/libs.versions.toml - 已更新为传统Android库
+   ✓ app/src/main/AndroidManifest.xml - 已正确配置
+
+项目结构完整！
+
+使用说明：
+1. 在Android Studio中打开项目
+2. 等待Gradle同步完成
+3. 运行项目到模拟器或真机
+
+界面特点：
+- 顶部显示总消费金额
+- 中间有添加消费按钮
+- 下方显示消费记录列表
+- 使用纯Java和XML布局
+- 不使用Kotlin和Jetpack Compose

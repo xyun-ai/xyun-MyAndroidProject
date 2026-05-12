@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="通知功能测试"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- 基础通知测试 -->
+    <Button
+        android:id="@+id/btn_test_basic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:padding="16dp"
+        android:text="测试基础通知"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- 每日总结通知测试 -->
+    <Button
+        android:id="@+id/btn_test_daily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:padding="16dp"
+        android:text="测试每日总结通知"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- 预算提醒通知测试 -->
+    <Button
+        android:id="@+id/btn_test_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:padding="16dp"
+        android:text="测试预算提醒通知"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- 清除通知 -->
+    <Button
+        android:id="@+id/btn_clear_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:padding="16dp"
+        android:text="清除所有通知"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- 返回按钮 -->
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_rounded_corner"
+        android:padding="16dp"
+        android:text="返回主页面"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- 说明文字 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:lineSpacingExtra="8dp"
+        android:text="教学重点：\n1. NotificationChannel创建\n2. PendingIntent使用\n3. 不同样式通知\n4. 通知权限管理"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+</LinearLayout>
